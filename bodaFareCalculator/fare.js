@@ -1,7 +1,5 @@
-//Declare constants
-const CalculationRules = {
-  baseFare: 50,
-  perKmCharge: 15,
-};
-//Define function
-function calculateBodaFare() {}
+//Declare Function
+function calculateBodaFare(distance) {
+  const bodaFare = 50;
+  const chargePerkm = 15;
+}

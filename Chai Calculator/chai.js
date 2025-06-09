@@ -1,31 +1,18 @@
-//Declare constants
-const ChaiRecipe = {
-  waterInMl: 200,
-  milkInMl: 50,
-  tealeavesTbsp: 1,
-  sugarTsp: 2,
-};
 //Define function
-function calculateChaiIngredients() {
-  //prompt
-  const numberOfCups = Number(
-    prompt(`Karibu! How Many cups of chai would you like to make?`)
-  );
-  //Input validation
-  if (isNaN(numberOfCups) || numberOfCups <= 0) {
-    console.log(`Please enter a valid number of cups`);
-    return;
-  }
-  //calculation
-  const water = ChaiRecipe.waterInMl * numberOfCups;
-  const milk = ChaiRecipe.milkInMl * numberOfCups;
-  const tealeaves = ChaiRecipe.tealeavesTbsp * numberOfCups;
-  const sugar = ChaiRecipe.sugarTsp * numberOfCups;
+function calculateChaiIngredients(numberOfCups) {
+  const water = 200 * numberOfCups;
+  const milk = 50 * numberOfCups;
+  const tealeaves = 1 * numberOfCups;
+  const sugar = 2 * numberOfCups;
+
   //log
   console.log(`To make ${numberOfCups} cups you will need:`);
   console.log(`Water : ${water}ml`);
   console.log(`Milk: ${milk}ml`);
   console.log(`Tea Leaves (majani) : ${tealeaves} tablespoons`);
-  console.log(`Sugar(sukari) : ${sugarTsp} teaspoons`);
+  console.log(`Sugar(sukari) : ${sugar} teaspoons`);
   console.log("Enjoy your Chai Bora!");
 }
+//prompt
+const input = Number(prompt(`Karibu! How many cups would you like?`));
+calculateChaiIngredients(input);
