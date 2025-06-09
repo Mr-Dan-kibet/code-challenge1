@@ -12,7 +12,7 @@ function estimateTransactionFee(amountToSend) {
   console.log(`Sending KES ${amountToSend}:`);
   console.log(`Calculated Transaction Fee: KES ${transactionFee}`);
   console.log(`Total amount to be debited: KES ${totalDebited}`);
-  console.log(`Send money securly!`);
+  console.log(`Send money securely!`);
 }
 //prompt
 const money = Number(prompt(`Helllo! How much will you be sending today?`));
